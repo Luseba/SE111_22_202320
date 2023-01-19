@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in-document styling-->
+    <style>
+        /*in her we write CSS*/
+        /*selecting in CSS & Javascript: select specific element(s) on a page
+            *by Element type            ex: body, div, p
+            *by ID attribute value      ex: #wrapper, #nav, #footer
+            *by Class attribute         ex: coming in week 3 >:]
+            
+
+        */
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+        #Nav, #Footer {
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body style="background-color: grey">
+
+    <div id="wrapper"><!--this is the wrapper, and it wraps around all content-->
+
+        <!--Header-->
+        <h1>1st pillar Al</h1>
+
+
+        <!--NAV-->
+        <div id="Nav">
+            <!-- ctrl + / makes it into a comment -->
+            <!--a href makes it a link-->
+            <!--target="_blank" makes the link open in a new tab-->
+            <!--external link: a link to a page outside of your website-->
+            <!-- internal link: a link to a page inside of your website/root folder -->
+            <!-- relative path -->
+            <!-- in page jump: a link to another section within the current page -->
+            <a href="#Bio">Bio</a>
+            <a href="#Schools">Schools</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Footer">Bottom of Page</a>
+        </div><!--/#nav-->
+
+
+        <!--bio-->
+        <div id="Bio">
+            
+            <h2>About Me</h2>
+            
+            <p>Enjoying my time playing <b><u>overweight</u></b> and carrying <b>Noah</b> through ranked and scrims. Playing the drums and guitar are my biggest past time as well as watching anime. I also enjoy cooking/baking as well as wasting time staring into the <b>abyss</b>.
+            </p>
+
+            <hr>
+
+            <!-- Remote imagine links (absolute paths) BOOOO!!!! BAD!!!! -->
+            <img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/Gyomei_anime.png/revision/latest/scale-to-width-down/350?cb=20200317170337" alt="1st pillar god praying for the ass beating" title="Gyomei Himejima">
+
+            <!-- Relative image link (relative path) resource must be stored in the root folder -->
+            <img src="images/1210492.png" alt="gyomei with kitten" style="width:415px" title="Gyo with a kitten">
+
+        </div><!--/#Bio-->
+    
+        
+        <!--school-->
+        <div id="School">
+
+            <h2>Schools</h2>
+
+            <ol>
+
+                <li>New England Tech - Cybersecurity <img src="images/220px-New_England_Institute_of_Technology,_East_Greenwich,_Rhode_Island.jpg" alt="neit"></li>
+
+                <li>Massasoit community college - Architecture <img src="images/download.jpg" alt="Massasoit"></li>
+
+                <li>Seminole State College - Pharmaceutical <img src="images/img5271-1_1200xx4032-2268-0-378.jpg" alt="seminole state college" style="width:350px"></li>
+
+            </ol>
+
+
+        </div><!--/#school-->
+    
+        
+        <!--hobbies-->
+        <div id="Hobbies">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>Playing instruments</li>
+                <li>Football</li>
+                <li>Gaming</li>
+                <li>Drawing</li>
+                <li>Cooking</li>
+                <li>Baking</li>
+                <li>Horror movie watching</li>
+                <li>Procrastinating</li>
+                <li>Sleeping</li>
+
+            </ol>
+
+
+        </div><!--/#hobbies-->
+    
+
+        <!--footer-->
+        <div id="Footer">
+
+            <a href="#Nav">Back to the top</a>
+            <br>
+            <p>&copy; 1st pillar Al | SE111 | Winter 2023</p>
+            <br>
+            <!-- Validation screenshot -->
+            <img src="images/Capture1.PNG" alt="Validation of Page" style="width:100%">
+
+
+        </div><!--/#footer-->
+    
+    </div>
+
+
+
+</body>
+</html>
