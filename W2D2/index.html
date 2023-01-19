@@ -7,8 +7,86 @@
     <meta name="description" content="W2D2 Bio Assignment Demo" >
     
     <title>W2 | Bio</title>
+
+    <!--in-document styling-->
+    <style>
+        /*in her we write CSS*/
+        /*selecting in CSS & Javascript: select specific element(s) on a page
+            *by Element type            ex: body, div, p
+            *by ID attribute value      ex: #wrapper, #nav, #footer
+            *by Class attribute         ex: coming in week 3 >:]
+            
+
+        */
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+        #Nav, #Footer {
+            background-color: lightgrey;
+        }
+
+    </style>
 </head>
-<body>
+<body style="background-color: grey">
+
+    <div id="wrapper"><!--this is the wrapper, and it wraps around all content-->
+
+        <!--Header-->
+        <h1>1st pillar Al</h1>
+
+
+        <!--NAV-->
+        <div id="Nav">
+            <!-- ctrl + / makes it into a comment -->
+            <!--a href makes it a link-->
+            <!--target="_blank" makes the link open in a new tab-->
+            <!--external link: a link to a page outside of your website-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+
+            <!-- internal link: a link to a page inside of your website/root folder -->
+            <!-- relative path -->
+            <a href="page2.html" target="_blank">page 2</a>
+
+            <!-- in page jump: a link to another section within the current page -->
+            <a href="#Bio">Bio</a>
+            <a href="#Schools">Schools</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Footer">Bottom of Page</a>
+        </div><!--/#nav-->
+
+
+        <!--bio-->
+        <div id="Bio">
+
+
+        </div><!--/#Bio-->
+    
+        
+        <!--school-->
+        <div id="School">
+
+
+        </div><!--/#school-->
+    
+        
+        <!--hobbies-->
+        <div id="Hobbies">
+
+
+        </div><!--/#hobbies-->
+    
+
+        <!--footer-->
+        <div id="Footer">
+
+
+        </div><!--/#footer-->
+    
+    </div>
+
+
 
 </body>
 </html>
