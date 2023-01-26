@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="A santiago">
+    <meta name="description" content="w3 demo">
+
+    <title>W3 Demo | PEOPLE</title>
+
+    <style>
+        /*write in CSS here*/
+
+        /*selecting by tag type*/
+
+        div{/*applies to all divs on page*/
+
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+
+        }
+
+        /*select by #ID name*/
+        #wrapper{/*applies only to the element with an ID value 'wrapper'*/
+    
+        background-color: darkgrey;
+        width:900px;
+        margin:auto;
+
+    }
+
+    /*slect by .CLASS name*/
+    .fancy-font{/*applies to any elements with the 'fancy-font'*/
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+
+    }
+
+    .border {
+        border:1px solid maroon;
+    }
+
+    #nav {
+
+        border:3px solid maroon;
+        text-align: center;
+    }
+
+    .pic {
+
+        width:500px;
+        padding:5px;
+        box-shadow:0 0 8px black;
+        margin-right: 400px;
+
+    }
+
+
+    </style>
+</head>
+<body style="background-color:grey">
+    
+    <div id="wrapper">
+
+        <div id="header" class="border">
+            <h1 class="fancy-font"><em>The Last of Us (HBO)</em></h1>
+        </div><!--/ #header-->
+        
+        <div id="nav" class="border">
+
+            <!-- relative links: resources that live within the root project directory -->
+            <a href="index.html">| HOME |</a>
+            <a href="about.html">| ABOUT |</a>
+            <a href="people.html">| PEOPLE |</a>
+            <a href="places.html">| PLACES |</a>
+
+            <br>
+
+            <!-- external link: outside of the website/domain; needs to be an ABSOLUTE path (starts with https) -->
+            <a href="https://www.hbo.com/the-last-of-us">| Official HBO Site |</a>
+
+            <!-- in-page jump link: jumps to a section of this current page -->
+            <a href="#footer">| Bottom of Page |</a>
+
+        </div><!--/ #nav-->
+
+        <div id="main-content" class="border">
+            <h2>content area for the <b>PEOPLE</b> page.</h2>
+
+            <img src="images/ep2.jpg" alt="Ellie & Tess talking" class="pic">
+
+        </div><!--/ #main-content-->
+
+        <div id="footer" class="border">
+
+            <p>&copy; A. Santiago | SE111.22 | Winter 2023</p>
+
+            <br>
+
+            <a href="index.html#header">| go to HOME PAGE |</a>
+
+        </div><!--/ #footer-->
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
