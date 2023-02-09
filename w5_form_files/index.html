@@ -18,7 +18,7 @@
         <table>
             <tbody>
                 <h1>Birthday Party Registration Form</h1>
-                <tr>
+                <thead>
                     <td>
                         <label for="label"><b>Label</b></label>
                     </td>
@@ -26,7 +26,7 @@
                     <td>
                         <label for="formfields"><b>Form Fields</b></label>
                     </td>
-                </tr>
+                </thead>
                 <!-- NEW ROW: Parent Guardian Name -->
                 <tr>
                     <!--LABEL-->
@@ -36,8 +36,8 @@
                 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="gfirst" id="first" placeholder="First Name"><br>
-                        <input type="text" name="gfirst" id="last" placeholder="Last Name"> 
+                        <input type="text" name="gfirst" id="g-first" placeholder="First Name" maxlength="20" required><br>
+                        <input type="text" name="gfirst" id="g-last" placeholder="Last Name" maxlength="20" required> 
                     </td>
                 </tr>
                 
@@ -50,7 +50,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="cfirst" id="cfirst" placeholder="Child's First Name"> 
+                        <input type="text" name="cfirst" id="c-first" placeholder="Child's FirstName" required> 
                     </td>
                 </tr>
 
@@ -62,7 +62,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="age" id="age" placeholder="Child's Age"> 
+                        <input type="number" name="age" value="3" required> 
                     </td>
 
                 </tr>
@@ -87,7 +87,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="date" name="date" id="date"> 
+                        <input type="date" name="date" id="date" required> 
                     </td>
 
                 </tr>
@@ -100,7 +100,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="time" name="time" id="time"> 
+                        <input type="time" name="time" id="time" rquired> 
                     </td>
 
                 </tr>
@@ -113,7 +113,7 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="text" name="guests" id="guests"> 
+                        <input type="number" name="guests" value="5"> 
                     </td>
 
                 </tr>
@@ -137,9 +137,9 @@
 
                     <!--INPUT-->
                     <td>
-                        <input type="radio" name="size" value="small">sm
-                        <input type="radio" name="size" value="medium">med
-                        <input type="radio" name="size" value="large">lg
+                        <input type="radio" name="size" value="sm">sm
+                        <input type="radio" name="size" value="md">med
+                        <input type="radio" name="size" value="lg">lg
                     </td>
 
                 </tr>
@@ -153,11 +153,11 @@
 
                     <!-- INPUT -->
                     <td>
-                        <input type="checkbox" name="drink1" value="coke"> Coke <br>
-                        <input type="checkbox" name="drink2" value="sprite"> Sprite <br>
-                        <input type="checkbox" name="drink3" value="fruitpunch"> Fruit Punch <br>
-                        <input type="checkbox" name="drink4" value="lemonade"> Lemonade <br>
-                        <input type="checkbox" name="drink5" value="icetea"> Iced Tea <br>
+                        <input type="checkbox" name="drink1" value="coke" checked="true" required><label for="drink1">Coke</label><br>
+                        <input type="checkbox" name="drink2" value="sprite"><label for="drink2">Sprite</label><br>
+                        <input type="checkbox" name="drink3" value="fruitpunch"><label for="drink3">Fruit Punch</label><br>
+                        <input type="checkbox" name="drink4" value="lemonade"><label for="drink4">Lemonade</label><br>
+                        <input type="checkbox" name="drink5" value="icetea"><label for="drink5">Iced Tea</label><br>
                     </td>
                 </tr>
 
