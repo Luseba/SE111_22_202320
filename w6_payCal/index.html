@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="A Santiago">
+    <meta name="description" content="week 6 | Javascript Calculator">
+
+    <title>Week 6 | Javascript Calculator</title>
+</head>
+<body>
+
+    <script>
+
+       var hrate = Number(prompt(`What is your hourly rate? $`))
+       var hwork = Number(prompt(`How many hours did you work? $`))
+       var tax = .2
+
+       var gross = hrate * hwork * 2
+       var taxamnt = gross * tax
+       var net = gross - taxamnt
+
+       alert(`Gross Pay: ${gross.toFixed(2)} \nUncle Sam's Share: ${taxamnt.toFixed(2)} \nNet Pay: ${net.toFixed(2)}`)
+       console.log(`Gross Pay: ${gross.toFixed(2)}`)
+       console.log(`Uncle Sam's Share: ${taxamnt.toFixed(2)}`)
+       console.log(`Net Pay: ${net.toFixed(2)}`)
+
+    </script>
+    
+</body>
+</html>
